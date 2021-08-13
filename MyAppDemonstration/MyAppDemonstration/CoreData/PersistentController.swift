@@ -35,12 +35,26 @@ class PersistentController {
         }
     }
     
-//    func insertData(_ photo: Photo) {
-//
-//            let photoEntity = NSEntityDescription.entity(forEntityName: "PhotoModel"), in: self.context)
-//            let model = PhotoModel(entity: photoEntity!, insertInto: self.context)
-//            model.url = photo.urls.regular
-//            PersistentController.shared.saveContext()
-//        }
+    func insertData(_ photo: Photos) {
+        
+        let photoEntity = NSEntityDescription.entity(forEntityName: "PhotoModel", in: persistentContainer.viewContext)
+        let model = PhotoModel(entity: photoEntity!, insertInto: persistentContainer.viewContext)
+            model.url = photo.urls.regular
+            model.desc = photo.alt_description
+        
+            PersistentController.shared.saveContext()
+        }
+    
+    func truncate(tableName: String){
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: tableName)
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetch)
+        
+        do {
+            _ = try persistentContainer.viewContext.execute(deleteRequest)
+        }catch {
+            fatalError("Failed to execute request: \(error)")
+        }
+    }
     }
 
+let db = PersistentController.shared

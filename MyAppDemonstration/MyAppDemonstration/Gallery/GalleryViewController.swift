@@ -29,6 +29,9 @@ class GalleryViewController: UIViewController {
             self.photos = results as! [Photos]
             self.collectionView.reloadData()
             print(results)
+            for photo in self.photos {
+                PersistentController.shared.insertData(photo)
+            }
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

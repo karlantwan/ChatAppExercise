@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G80" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="PhotoModel" representedClassName="PhotoModel" syncable="YES" codeGenerationType="class">
+    <entity name="PhotoModel" representedClassName="PhotoModel" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String"/>
         <attribute name="url" optional="YES" attributeType="String"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserModel" inverseName="photo" inverseEntity="UserModel"/>
     </entity>
-    <entity name="UserModel" representedClassName="UserModel" syncable="YES" codeGenerationType="class">
+    <entity name="UserModel" representedClassName="UserModel" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="profileImage" optional="YES" attributeType="String"/>
         <relationship name="photo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoModel" inverseName="user" inverseEntity="PhotoModel"/>

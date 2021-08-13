@@ -98,9 +98,9 @@
                             <rect key="frame" x="92.5" y="5.5" width="229" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
-                                <segment title="First"/>
-                                <segment title="Second"/>
-                                <segment title="Third"/>
+                                <segment title="Latest"/>
+                                <segment title="Popular"/>
+                                <segment title="Newest"/>
                             </segments>
                         </segmentedControl>
                     </navigationItem>
