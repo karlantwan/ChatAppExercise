@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		AC95D18326C4925A0088D151 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AC95D18226C4925A0088D151 /* Kingfisher */; };
 		AC95D18526C4A60B0088D151 /* FullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95D18426C4A60B0088D151 /* FullScreenImageViewController.swift */; };
+		ACE34F1226C6046E00D24F80 /* PhotoGallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACE34F1026C6046E00D24F80 /* PhotoGallery.xcdatamodeld */; };
+		ACE34F1626C604E500D24F80 /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE34F1526C604E500D24F80 /* PersistentController.swift */; };
+		ACE34F1B26C6094700D24F80 /* UserModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE34F1726C6094700D24F80 /* UserModel+CoreDataClass.swift */; };
+		ACE34F1C26C6094700D24F80 /* UserModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE34F1826C6094700D24F80 /* UserModel+CoreDataProperties.swift */; };
+		ACE34F1D26C6094700D24F80 /* PhotoModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE34F1926C6094700D24F80 /* PhotoModel+CoreDataClass.swift */; };
+		ACE34F1E26C6094700D24F80 /* PhotoModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE34F1A26C6094700D24F80 /* PhotoModel+CoreDataProperties.swift */; };
 		ACF8ED2F26C364FB00A9621E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED2E26C364FB00A9621E /* AppDelegate.swift */; };
 		ACF8ED3126C364FB00A9621E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED3026C364FB00A9621E /* SceneDelegate.swift */; };
 		ACF8ED3326C364FB00A9621E /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED3226C364FB00A9621E /* GalleryViewController.swift */; };
 		ACF8ED3626C364FB00A9621E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF8ED3426C364FB00A9621E /* Main.storyboard */; };
-		ACF8ED3926C364FB00A9621E /* MyAppDemonstration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED3726C364FB00A9621E /* MyAppDemonstration.xcdatamodeld */; };
 		ACF8ED3B26C364FD00A9621E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF8ED3A26C364FD00A9621E /* Assets.xcassets */; };
 		ACF8ED3E26C364FD00A9621E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF8ED3C26C364FD00A9621E /* LaunchScreen.storyboard */; };
 		ACF8ED4626C365D300A9621E /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED4526C365D300A9621E /* PreferencesViewController.swift */; };
@@ -26,12 +31,17 @@
 
 /* Begin PBXFileReference section */
 		AC95D18426C4A60B0088D151 /* FullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewController.swift; sourceTree = "<group>"; };
+		ACE34F1126C6046E00D24F80 /* PhotoGallery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoGallery.xcdatamodel; sourceTree = "<group>"; };
+		ACE34F1526C604E500D24F80 /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
+		ACE34F1726C6094700D24F80 /* UserModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ACE34F1826C6094700D24F80 /* UserModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ACE34F1926C6094700D24F80 /* PhotoModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		ACE34F1A26C6094700D24F80 /* PhotoModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ACF8ED2B26C364FB00A9621E /* MyAppDemonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppDemonstration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF8ED2E26C364FB00A9621E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF8ED3026C364FB00A9621E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ACF8ED3226C364FB00A9621E /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		ACF8ED3526C364FB00A9621E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ACF8ED3826C364FB00A9621E /* MyAppDemonstration.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyAppDemonstration.xcdatamodel; sourceTree = "<group>"; };
 		ACF8ED3A26C364FD00A9621E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF8ED3D26C364FD00A9621E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACF8ED3F26C364FD00A9621E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,9 +65,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACE34F0D26C6028C00D24F80 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				ACE34F1526C604E500D24F80 /* PersistentController.swift */,
+				ACE34F1426C604A700D24F80 /* Data Models */,
+				ACE34F1026C6046E00D24F80 /* PhotoGallery.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		ACE34F1426C604A700D24F80 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		ACE34F2026C60D7D00D24F80 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ACE34F1726C6094700D24F80 /* UserModel+CoreDataClass.swift */,
+				ACE34F1826C6094700D24F80 /* UserModel+CoreDataProperties.swift */,
+				ACE34F1926C6094700D24F80 /* PhotoModel+CoreDataClass.swift */,
+				ACE34F1A26C6094700D24F80 /* PhotoModel+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		ACF8ED2226C364FB00A9621E = {
 			isa = PBXGroup;
 			children = (
+				ACE34F2026C60D7D00D24F80 /* Entities */,
 				ACF8ED2D26C364FB00A9621E /* MyAppDemonstration */,
 				ACF8ED2C26C364FB00A9621E /* Products */,
 			);
@@ -76,6 +115,7 @@
 			children = (
 				ACF8ED2E26C364FB00A9621E /* AppDelegate.swift */,
 				ACF8ED3026C364FB00A9621E /* SceneDelegate.swift */,
+				ACE34F0D26C6028C00D24F80 /* CoreData */,
 				ACF8ED4F26C37EEA00A9621E /* Gallery */,
 				ACF8ED3426C364FB00A9621E /* Main.storyboard */,
 				ACF8ED4726C3669700A9621E /* Protocols.swift */,
@@ -86,7 +126,6 @@
 				ACF8ED3A26C364FD00A9621E /* Assets.xcassets */,
 				ACF8ED3C26C364FD00A9621E /* LaunchScreen.storyboard */,
 				ACF8ED3F26C364FD00A9621E /* Info.plist */,
-				ACF8ED3726C364FB00A9621E /* MyAppDemonstration.xcdatamodeld */,
 			);
 			path = MyAppDemonstration;
 			sourceTree = "<group>";
@@ -181,11 +220,16 @@
 				ACF8ED5126C3803700A9621E /* GalleryCollectionViewCell.swift in Sources */,
 				ACF8ED4626C365D300A9621E /* PreferencesViewController.swift in Sources */,
 				ACF8ED3326C364FB00A9621E /* GalleryViewController.swift in Sources */,
-				ACF8ED3926C364FB00A9621E /* MyAppDemonstration.xcdatamodeld in Sources */,
+				ACE34F1B26C6094700D24F80 /* UserModel+CoreDataClass.swift in Sources */,
 				ACF8ED4826C3669700A9621E /* Protocols.swift in Sources */,
+				ACE34F1C26C6094700D24F80 /* UserModel+CoreDataProperties.swift in Sources */,
+				ACE34F1D26C6094700D24F80 /* PhotoModel+CoreDataClass.swift in Sources */,
+				ACE34F1E26C6094700D24F80 /* PhotoModel+CoreDataProperties.swift in Sources */,
 				ACF8ED2F26C364FB00A9621E /* AppDelegate.swift in Sources */,
 				ACF8ED3126C364FB00A9621E /* SceneDelegate.swift in Sources */,
+				ACE34F1626C604E500D24F80 /* PersistentController.swift in Sources */,
 				AC95D18526C4A60B0088D151 /* FullScreenImageViewController.swift in Sources */,
+				ACE34F1226C6046E00D24F80 /* PhotoGallery.xcdatamodeld in Sources */,
 				ACF8ED4E26C3743900A9621E /* APIKey.swift in Sources */,
 				ACF8ED4A26C3670100A9621E /* Networking.swift in Sources */,
 			);
@@ -408,13 +452,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		ACF8ED3726C364FB00A9621E /* MyAppDemonstration.xcdatamodeld */ = {
+		ACE34F1026C6046E00D24F80 /* PhotoGallery.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				ACF8ED3826C364FB00A9621E /* MyAppDemonstration.xcdatamodel */,
+				ACE34F1126C6046E00D24F80 /* PhotoGallery.xcdatamodel */,
 			);
-			currentVersion = ACF8ED3826C364FB00A9621E /* MyAppDemonstration.xcdatamodel */;
-			path = MyAppDemonstration.xcdatamodeld;
+			currentVersion = ACE34F1126C6046E00D24F80 /* PhotoGallery.xcdatamodel */;
+			path = PhotoGallery.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

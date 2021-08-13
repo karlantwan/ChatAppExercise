@@ -11,18 +11,20 @@ import Kingfisher
 class GalleryCollectionViewCell: UICollectionViewCell {
     
     
-    @IBOutlet weak var ImageCell: UIImageView!
-    @IBOutlet weak var PhotoDescription: UILabel!
+
+    @IBOutlet weak var photoDescription: UILabel!
+    @IBOutlet weak var imageCell: UIImageView!
     
-    static let identifier = "PhotoCollectionViewCell"
+    static let identifier = "GalleryCollectionViewCell"
     
     var photo: Photos! {
         didSet{
-            self.PhotoDescription.text = photo.alt_description ?? "no description"
+            self.photoDescription.text = photo.alt_description ?? "no description"
+            
             guard let url = URL (string: photo.urls.regular) else {
                 return
             }
-            self.ImageCell.kf.setImage(with: url)
+            self.imageCell.kf.setImage(with: url)
         }
     }
 }

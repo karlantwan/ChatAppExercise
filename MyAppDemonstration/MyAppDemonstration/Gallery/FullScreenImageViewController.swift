@@ -9,15 +9,18 @@ import UIKit
 import Kingfisher
 
 class FullScreenImageViewController: UIViewController {
-    var photo: Photos!
     
-    @IBOutlet weak var fullScreenImage: UINavigationItem!
+    var imageUrl: String!
+    
+
+    @IBOutlet weak var fullScreenImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        self.fullScreenImage.kf.setImage(with: URL(string: imageUrl))
     }
-
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
 
 }

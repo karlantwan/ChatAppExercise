@@ -31,16 +31,22 @@ class GalleryViewController: UIViewController {
             print(results)
         }
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let fullSreenImageViewController = segue.destination as! FullScreenImageViewController
-//        guard let selectedIndexPaths = collectionView.indexPathsForSelectedItems,
-//              let selectedIndexPath = selectedIndexPaths.first else {
-//            return
-//        }
-//        let photo = photos[selectedIndexPath.row]
-//        fullSreenImageViewController.url
-//    }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard segue.identifier == "toFullScreenImage" else {
+            return
+        }
+        
+        let fullSreenImageViewController = segue.destination as! FullScreenImageViewController
+    
+        guard let selectedIndexPaths = collectionView.indexPathsForSelectedItems,
+              let selectedIndexPath = selectedIndexPaths.first else {
+            return
+        }
+        
+        let photo = photos[selectedIndexPath.row]
+        fullSreenImageViewController.imageUrl = photo.urls.regular
+    }
 }
 
 extension GalleryViewController: UICollectionViewDataSource {
@@ -60,26 +66,10 @@ extension GalleryViewController: UICollectionViewDelegate {
     
 }
 
-extension GalleryViewController: UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize (width: screenSize.size.width, height: 280)
-    }
-}
-
-//extension GalleryViewController: UICollectionViewController{
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        guard let navController = self.navigationController else {
-//            return
-//        }
-//
-//        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//
-//        let photo = photos[indexPath.row]
-//        let fullScreenImageViewController = mainStoryboard.instantiateViewController(identifier: "FullScreenImageViewController") as! FullScreenImageViewController
-//        fullScreenImageViewController.photo = photo
-//
-//        navController.pushViewController(fullScreenImageViewController, animated: true)
+//extension GalleryViewController: UICollectionViewDelegateFlowLayout{
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize (width: screenSize.size.width, height: 220)
 //    }
 //}
+
 
