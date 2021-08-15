@@ -38,11 +38,19 @@ class PersistentController {
     func insertData(_ photo: Photos) {
         
         let photoEntity = NSEntityDescription.entity(forEntityName: "PhotoModel", in: persistentContainer.viewContext)
-        let model = PhotoModel(entity: photoEntity!, insertInto: persistentContainer.viewContext)
-            model.url = photo.urls.regular
-            model.desc = photo.alt_description
+        let photoModel = PhotoModel(entity: photoEntity!, insertInto: persistentContainer.viewContext)
+            photoModel.url = photo.urls.regular
+            photoModel.desc = photo.alt_description
         
-            PersistentController.shared.saveContext()
+        let userEntity = NSEntityDescription.entity(forEntityName: "UserModel", in: persistentContainer.viewContext)
+        let userModel = UserModel(entity: userEntity!, insertInto: persistentContainer.viewContext)
+            userModel.name = photo.user.name
+            userModel.profileImage = photo.user.profileImage.medium
+        
+        photoModel.user = userModel
+        userModel.photo = photoModel
+        
+        saveContext()
         }
     
     func truncate(tableName: String){

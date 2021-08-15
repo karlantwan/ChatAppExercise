@@ -7,9 +7,6 @@
 
 import Foundation
 
-protocol API {
-    func fetchPhotos()
-}
 protocol DelegateProtocol {
     func didReceive(models: [Codable])
 }
