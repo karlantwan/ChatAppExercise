@@ -13,6 +13,13 @@
 		AC7386A126C6134800602993 /* UserModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73869D26C6134800602993 /* UserModel+CoreDataProperties.swift */; };
 		AC95D18326C4925A0088D151 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AC95D18226C4925A0088D151 /* Kingfisher */; };
 		AC95D18526C4A60B0088D151 /* FullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95D18426C4A60B0088D151 /* FullScreenImageViewController.swift */; };
+		ACD882DB26C9D04A0073DEA4 /* BlogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD882DA26C9D04A0073DEA4 /* BlogsViewController.swift */; };
+		ACD882E426C9D68E0073DEA4 /* Blogs Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD882E326C9D68E0073DEA4 /* Blogs Networking.swift */; };
+		ACD882E626C9D6A40073DEA4 /* Blogs API Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD882E526C9D6A40073DEA4 /* Blogs API Models.swift */; };
+		ACD882E826C9D6BF0073DEA4 /* Blog Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD882E726C9D6BF0073DEA4 /* Blog Protocols.swift */; };
+		ACD882EA26C9D6F30073DEA4 /* Blogs Clients.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD882E926C9D6F30073DEA4 /* Blogs Clients.swift */; };
+		ACD882EC26C9E1120073DEA4 /* BlogsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD882EB26C9E1120073DEA4 /* BlogsCollectionViewController.swift */; };
+		ACD882EF26C9E1710073DEA4 /* BlogsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD882EE26C9E1710073DEA4 /* BlogsCollectionViewCell.swift */; };
 		ACE34F1226C6046E00D24F80 /* PhotoGallery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACE34F1026C6046E00D24F80 /* PhotoGallery.xcdatamodeld */; };
 		ACE34F1626C604E500D24F80 /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE34F1526C604E500D24F80 /* PersistentController.swift */; };
 		ACF8ED2F26C364FB00A9621E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED2E26C364FB00A9621E /* AppDelegate.swift */; };
@@ -21,7 +28,6 @@
 		ACF8ED3626C364FB00A9621E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF8ED3426C364FB00A9621E /* Main.storyboard */; };
 		ACF8ED3B26C364FD00A9621E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF8ED3A26C364FD00A9621E /* Assets.xcassets */; };
 		ACF8ED3E26C364FD00A9621E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF8ED3C26C364FD00A9621E /* LaunchScreen.storyboard */; };
-		ACF8ED4626C365D300A9621E /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED4526C365D300A9621E /* PreferencesViewController.swift */; };
 		ACF8ED4826C3669700A9621E /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED4726C3669700A9621E /* Protocols.swift */; };
 		ACF8ED4A26C3670100A9621E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED4926C3670100A9621E /* Networking.swift */; };
 		ACF8ED4C26C3674500A9621E /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8ED4B26C3674400A9621E /* APIModels.swift */; };
@@ -35,6 +41,13 @@
 		AC73869C26C6134800602993 /* UserModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AC73869D26C6134800602993 /* UserModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AC95D18426C4A60B0088D151 /* FullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewController.swift; sourceTree = "<group>"; };
+		ACD882DA26C9D04A0073DEA4 /* BlogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsViewController.swift; sourceTree = "<group>"; };
+		ACD882E326C9D68E0073DEA4 /* Blogs Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blogs Networking.swift"; sourceTree = "<group>"; };
+		ACD882E526C9D6A40073DEA4 /* Blogs API Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blogs API Models.swift"; sourceTree = "<group>"; };
+		ACD882E726C9D6BF0073DEA4 /* Blog Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blog Protocols.swift"; sourceTree = "<group>"; };
+		ACD882E926C9D6F30073DEA4 /* Blogs Clients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Blogs Clients.swift"; sourceTree = "<group>"; };
+		ACD882EB26C9E1120073DEA4 /* BlogsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsCollectionViewController.swift; sourceTree = "<group>"; };
+		ACD882EE26C9E1710073DEA4 /* BlogsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogsCollectionViewCell.swift; sourceTree = "<group>"; };
 		ACE34F1126C6046E00D24F80 /* PhotoGallery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoGallery.xcdatamodel; sourceTree = "<group>"; };
 		ACE34F1526C604E500D24F80 /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
 		ACF8ED2B26C364FB00A9621E /* MyAppDemonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppDemonstration.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +58,6 @@
 		ACF8ED3A26C364FD00A9621E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF8ED3D26C364FD00A9621E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACF8ED3F26C364FD00A9621E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACF8ED4526C365D300A9621E /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		ACF8ED4726C3669700A9621E /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		ACF8ED4926C3670100A9621E /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		ACF8ED4B26C3674400A9621E /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
@@ -74,6 +86,27 @@
 				ACF8ED4D26C3743900A9621E /* APIKey.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		ACD882DC26C9D07F0073DEA4 /* Blogs */ = {
+			isa = PBXGroup;
+			children = (
+				ACD882DA26C9D04A0073DEA4 /* BlogsViewController.swift */,
+				ACD882E726C9D6BF0073DEA4 /* Blog Protocols.swift */,
+				ACD882E926C9D6F30073DEA4 /* Blogs Clients.swift */,
+				ACD882E526C9D6A40073DEA4 /* Blogs API Models.swift */,
+				ACD882E326C9D68E0073DEA4 /* Blogs Networking.swift */,
+			);
+			path = Blogs;
+			sourceTree = "<group>";
+		};
+		ACD882ED26C9E11F0073DEA4 /* Blogs Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				ACD882EB26C9E1120073DEA4 /* BlogsCollectionViewController.swift */,
+				ACD882EE26C9E1710073DEA4 /* BlogsCollectionViewCell.swift */,
+			);
+			path = "Blogs Collection View";
 			sourceTree = "<group>";
 		};
 		ACE34F0D26C6028C00D24F80 /* CoreData */ = {
@@ -129,8 +162,9 @@
 				ACF8ED3426C364FB00A9621E /* Main.storyboard */,
 				ACE34F0D26C6028C00D24F80 /* CoreData */,
 				ACF8ED4F26C37EEA00A9621E /* Gallery */,
+				ACD882ED26C9E11F0073DEA4 /* Blogs Collection View */,
+				ACD882DC26C9D07F0073DEA4 /* Blogs */,
 				AC03F56126C64D50008C387A /* Networking */,
-				ACF8ED4526C365D300A9621E /* PreferencesViewController.swift */,
 				ACF8ED3A26C364FD00A9621E /* Assets.xcassets */,
 				ACF8ED3C26C364FD00A9621E /* LaunchScreen.storyboard */,
 				ACF8ED3F26C364FD00A9621E /* Info.plist */,
@@ -224,10 +258,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD882E626C9D6A40073DEA4 /* Blogs API Models.swift in Sources */,
+				ACD882E426C9D68E0073DEA4 /* Blogs Networking.swift in Sources */,
 				AC73869E26C6134800602993 /* PhotoModel+CoreDataClass.swift in Sources */,
+				ACD882E826C9D6BF0073DEA4 /* Blog Protocols.swift in Sources */,
+				ACD882EF26C9E1710073DEA4 /* BlogsCollectionViewCell.swift in Sources */,
 				ACF8ED4C26C3674500A9621E /* APIModels.swift in Sources */,
 				ACF8ED5126C3803700A9621E /* GalleryCollectionViewCell.swift in Sources */,
-				ACF8ED4626C365D300A9621E /* PreferencesViewController.swift in Sources */,
 				ACF8ED3326C364FB00A9621E /* GalleryViewController.swift in Sources */,
 				ACF8ED4826C3669700A9621E /* Protocols.swift in Sources */,
 				ACF8ED2F26C364FB00A9621E /* AppDelegate.swift in Sources */,
@@ -235,11 +272,14 @@
 				AC7386A126C6134800602993 /* UserModel+CoreDataProperties.swift in Sources */,
 				ACE34F1626C604E500D24F80 /* PersistentController.swift in Sources */,
 				AC95D18526C4A60B0088D151 /* FullScreenImageViewController.swift in Sources */,
+				ACD882DB26C9D04A0073DEA4 /* BlogsViewController.swift in Sources */,
 				AC73869F26C6134800602993 /* PhotoModel+CoreDataProperties.swift in Sources */,
 				ACE34F1226C6046E00D24F80 /* PhotoGallery.xcdatamodeld in Sources */,
 				AC7386A026C6134800602993 /* UserModel+CoreDataClass.swift in Sources */,
+				ACD882EC26C9E1120073DEA4 /* BlogsCollectionViewController.swift in Sources */,
 				ACF8ED4E26C3743900A9621E /* APIKey.swift in Sources */,
 				ACF8ED4A26C3670100A9621E /* Networking.swift in Sources */,
+				ACD882EA26C9D6F30073DEA4 /* Blogs Clients.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

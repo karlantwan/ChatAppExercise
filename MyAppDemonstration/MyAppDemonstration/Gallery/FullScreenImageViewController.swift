@@ -11,10 +11,8 @@ import Kingfisher
 class FullScreenImageViewController: UIViewController {
     
     var imageUrl: String!
-    
 
     @IBOutlet weak var fullScreenImage: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.fullScreenImage.kf.setImage(with: URL(string: imageUrl))
@@ -24,3 +22,4 @@ class FullScreenImageViewController: UIViewController {
     }
 
 }
+
