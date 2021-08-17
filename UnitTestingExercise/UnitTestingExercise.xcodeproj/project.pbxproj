@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0E728626CA2C97009756A5 /* uitest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E728526CA2C97009756A5 /* uitest.swift */; };
 		AC95D19326C4E32D0088D151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95D19226C4E32D0088D151 /* AppDelegate.swift */; };
 		AC95D19526C4E32D0088D151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95D19426C4E32D0088D151 /* SceneDelegate.swift */; };
 		AC95D19726C4E32D0088D151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95D19626C4E32D0088D151 /* ViewController.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC0E728526CA2C97009756A5 /* uitest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uitest.swift; sourceTree = "<group>"; };
 		AC95D18F26C4E32D0088D151 /* UnitTestingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC95D19226C4E32D0088D151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC95D19426C4E32D0088D151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				AC95D19826C4E32D0088D151 /* Main.storyboard */,
 				AC95D19B26C4E3320088D151 /* Assets.xcassets */,
 				AC95D19D26C4E3320088D151 /* LaunchScreen.storyboard */,
+				AC0E728526CA2C97009756A5 /* uitest.swift */,
 				AC95D1A026C4E3320088D151 /* Info.plist */,
 			);
 			path = UnitTestingExercise;
@@ -432,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0E728626CA2C97009756A5 /* uitest.swift in Sources */,
 				AC95D1C626C4EA6F0088D151 /* AgeClassifierTest.swift in Sources */,
 				AC95D1AA26C4E3330088D151 /* UnitTestingExerciseTests.swift in Sources */,
 			);

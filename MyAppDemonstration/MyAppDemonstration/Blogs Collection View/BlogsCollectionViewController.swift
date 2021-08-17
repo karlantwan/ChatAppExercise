@@ -38,7 +38,6 @@ class BlogsCollectionViewController: UIViewController, UICollectionViewDelegate,
 
     }
     fileprivate func loadImages() {
-//        activityIndicator.startAnimating()
         blogsCollectionView.isHidden = true
         truncateTable()
         fetchData()
@@ -77,11 +76,8 @@ class BlogsCollectionViewController: UIViewController, UICollectionViewDelegate,
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        guard segue.identifier == "toFullScreenImage" else {
-            return
-        }
-        
-        let fullSreenImageViewController = segue.destination as! FullScreenImageViewController
+
+        let blogPostViewController = segue.destination as! BlogPostViewController
     
         guard let selectedIndexPaths = blogsCollectionView.indexPathsForSelectedItems,
               let selectedIndexPath = selectedIndexPaths.first else {
@@ -89,7 +85,7 @@ class BlogsCollectionViewController: UIViewController, UICollectionViewDelegate,
         }
         
         let photo = photos[selectedIndexPath.row]
-        fullSreenImageViewController.imageUrl = photo.urls.regular
+        blogPostViewController.imageUrl = photo.urls.regular
     }
 }
 
@@ -101,7 +97,7 @@ extension BlogsCollectionViewController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let photo = photos[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! BlogsCollectionViewCell
-        cell.photo = photo
+        cell.photoBlogs = photo
         return cell
     }
 }

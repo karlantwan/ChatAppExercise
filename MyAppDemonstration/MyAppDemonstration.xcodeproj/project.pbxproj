@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0E728426CA02C6009756A5 /* BlogPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E728326CA02C6009756A5 /* BlogPostViewController.swift */; };
 		AC73869E26C6134800602993 /* PhotoModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73869A26C6134800602993 /* PhotoModel+CoreDataClass.swift */; };
 		AC73869F26C6134800602993 /* PhotoModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73869B26C6134800602993 /* PhotoModel+CoreDataProperties.swift */; };
 		AC7386A026C6134800602993 /* UserModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73869C26C6134800602993 /* UserModel+CoreDataClass.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0E728326CA02C6009756A5 /* BlogPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostViewController.swift; sourceTree = "<group>"; };
 		AC73869A26C6134800602993 /* PhotoModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AC73869B26C6134800602993 /* PhotoModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AC73869C26C6134800602993 /* UserModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				ACD882EB26C9E1120073DEA4 /* BlogsCollectionViewController.swift */,
+				AC0E728326CA02C6009756A5 /* BlogPostViewController.swift */,
 				ACD882EE26C9E1710073DEA4 /* BlogsCollectionViewCell.swift */,
 			);
 			path = "Blogs Collection View";
@@ -158,16 +161,16 @@
 			isa = PBXGroup;
 			children = (
 				ACF8ED2E26C364FB00A9621E /* AppDelegate.swift */,
+				ACF8ED3A26C364FD00A9621E /* Assets.xcassets */,
 				ACF8ED3026C364FB00A9621E /* SceneDelegate.swift */,
 				ACF8ED3426C364FB00A9621E /* Main.storyboard */,
+				ACF8ED3C26C364FD00A9621E /* LaunchScreen.storyboard */,
+				ACF8ED3F26C364FD00A9621E /* Info.plist */,
 				ACE34F0D26C6028C00D24F80 /* CoreData */,
 				ACF8ED4F26C37EEA00A9621E /* Gallery */,
 				ACD882ED26C9E11F0073DEA4 /* Blogs Collection View */,
 				ACD882DC26C9D07F0073DEA4 /* Blogs */,
 				AC03F56126C64D50008C387A /* Networking */,
-				ACF8ED3A26C364FD00A9621E /* Assets.xcassets */,
-				ACF8ED3C26C364FD00A9621E /* LaunchScreen.storyboard */,
-				ACF8ED3F26C364FD00A9621E /* Info.plist */,
 			);
 			path = MyAppDemonstration;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				ACE34F1226C6046E00D24F80 /* PhotoGallery.xcdatamodeld in Sources */,
 				AC7386A026C6134800602993 /* UserModel+CoreDataClass.swift in Sources */,
 				ACD882EC26C9E1120073DEA4 /* BlogsCollectionViewController.swift in Sources */,
+				AC0E728426CA02C6009756A5 /* BlogPostViewController.swift in Sources */,
 				ACF8ED4E26C3743900A9621E /* APIKey.swift in Sources */,
 				ACF8ED4A26C3670100A9621E /* Networking.swift in Sources */,
 				ACD882EA26C9D6F30073DEA4 /* Blogs Clients.swift in Sources */,

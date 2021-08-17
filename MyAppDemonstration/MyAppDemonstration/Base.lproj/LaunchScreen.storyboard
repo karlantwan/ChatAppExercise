@@ -19,7 +19,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="dCu-RZ-mCR">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 15" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-bi-V1a">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 3" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-bi-V1a">
                                 <rect key="frame" x="87" y="384" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Tnd-wR-dJZ"/>
@@ -27,13 +27,13 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="｢PLACEHOLDER｣" translatesAutoresizingMaskIntoConstraints="NO" id="eU2-BK-HC9">
-                                <rect key="frame" x="87" y="825" width="240" height="17"/>
+                                <rect key="frame" x="57" y="825" width="300" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="L0v-pQ-7N1"/>
-                                    <constraint firstAttribute="width" constant="240" id="X0M-7P-Vxc"/>
+                                    <constraint firstAttribute="width" constant="300" id="X0M-7P-Vxc"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 9" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-Tv-xD4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 4" translatesAutoresizingMaskIntoConstraints="NO" id="YZl-Tv-xD4">
                                 <rect key="frame" x="87" y="797" width="240" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="KLP-uz-kZM"/>
@@ -65,10 +65,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 15" width="65.5" height="48"/>
-        <image name="Group 9" width="48.5" height="5"/>
-        <image name="Rectangle 1" width="143" height="309"/>
-        <image name="｢PLACEHOLDER｣" width="59.5" height="7"/>
+        <image name="Group 3" width="162.5" height="130.5"/>
+        <image name="Group 4" width="147.5" height="17"/>
+        <image name="Rectangle 1" width="214" height="463"/>
+        <image name="｢PLACEHOLDER｣" width="198" height="22.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

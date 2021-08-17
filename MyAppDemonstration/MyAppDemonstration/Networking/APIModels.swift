@@ -14,6 +14,7 @@ struct Photos: Codable {
 }
 struct Url: Codable {
     var regular: String
+    var thumb: String
 }
 struct User: Codable {
     let name: String
