@@ -22,7 +22,6 @@ class GalleryViewController: UIViewController {
     }
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
-    private let network = Networking()
     
     override func viewDidLoad() {
         
