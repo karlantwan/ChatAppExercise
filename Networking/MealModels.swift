@@ -8,9 +8,12 @@
 import Foundation
 
 struct MealCategories: Codable {
-    let idCategory: Int?
-    let srtCategory: String?
-    let strCategoryThumb : URL
-    let strCategoryDescription: String?
+    let categories: [categories]
 
+}
+
+struct  categories: Codable {
+    let idCategory: String?
+    let strCategory: String?
+    let strCategoryThumb: String?
 }

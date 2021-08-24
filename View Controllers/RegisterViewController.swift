@@ -19,11 +19,16 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var registerTapped: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var houseNumberTextField: UITextField!
+    @IBOutlet weak var barangayTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var zipCodeTextField: UITextField!
+    @IBOutlet weak var provinceTextField: UITextField!
+    @IBOutlet weak var countryTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
         navigationController?.setNavigationBarHidden(false, animated: true)
-        confirmPasswordTextField.isHidden = true
 //        confirmPasswordTextField.isHidden = true
     }
     
@@ -41,24 +46,21 @@ class RegisterViewController: UIViewController {
         if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
-//            ||
-//           confirmPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            confirmPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
          {
-            
-//            if passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) !=  confirmPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) {
-//                        showError(_message: "Password not match")
-//                    }
-//            else {
-//                return nil
-//            }
             
             return "Please fill in the fields"
         }
+        
+        if passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) !=  confirmPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) {
+        return "Password do not match"
+                }
      
         return nil
     }
     @IBAction func registerTapped(_ sender: Any) {
+    
         
         // Validate Fields
         let error = validateFields()
@@ -73,6 +75,7 @@ class RegisterViewController: UIViewController {
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let address = "\(houseNumberTextField.text!), \(barangayTextField.text!), \(cityTextField.text!), \(zipCodeTextField.text!), \(provinceTextField.text!), \(countryTextField.text!)"
             
             // Create the User
             Auth.auth().createUser(withEmail: email, password: password){ [self](result, err) in
@@ -86,7 +89,7 @@ class RegisterViewController: UIViewController {
                 // User was created successfully, now store the first name and last name
                 let db = Firestore.firestore()
                 
-                db.collection("users").addDocument(data: ["first_name":firstName, "last_name":lastName, "email": email, "password": password, "uid": result!.user.uid ]) { (error) in
+                db.collection("users").addDocument(data: ["first_name":firstName, "last_name":lastName, "email": email, "password": password, "address": address, "uid": result!.user.uid ]) { (error) in
                     
                     if error != nil {
                         // Show error message
@@ -112,7 +115,6 @@ class RegisterViewController: UIViewController {
         errorLabel.text = _message
         errorLabel.alpha = 1
     }
-    
     @IBAction func continueToLogin(_ sender: Any) {
         
         transitionToLogin()

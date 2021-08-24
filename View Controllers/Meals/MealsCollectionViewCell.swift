@@ -15,7 +15,7 @@ class MealsCollectionViewCell: UICollectionViewCell {
 
     var category: MealCategories! {
         didSet{
-            self.categoryLabel.text = category.srtCategory ?? "no Category"
+            self.categoryLabel.text = categories.srtCategory ?? "no Category"
             }
         }
     }
