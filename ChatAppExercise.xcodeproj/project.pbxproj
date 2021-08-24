@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,13 @@
 		51800E69FA4474322EC8774F /* Pods_ChatAppExerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1914F6957593E3556E1B614 /* Pods_ChatAppExerciseTests.framework */; };
 		AC8D02EB26CC8B7800C86623 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D02EA26CC8B7800C86623 /* WelcomeViewController.swift */; };
 		AC8D02ED26CCABFF00C86623 /* AppUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D02EC26CCABFF00C86623 /* AppUI.swift */; };
-		ACEF995126D4892B00512000 /* FoodMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF995026D4892B00512000 /* FoodMealViewController.swift */; };
 		ACEF995326D48A9F00512000 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACEF995226D48A9F00512000 /* GoogleService-Info.plist */; };
+		ACEF995926D4A51E00512000 /* MealModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF995826D4A51E00512000 /* MealModels.swift */; };
+		ACEF995C26D4BDD200512000 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = ACEF995B26D4BDD200512000 /* Kingfisher */; };
+		ACEF995F26D4BE3600512000 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF995E26D4BE3600512000 /* Networking.swift */; };
+		ACEF996126D4BE8800512000 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF996026D4BE8800512000 /* Protocol.swift */; };
+		ACEF996426D4C09100512000 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF996326D4C09100512000 /* MealsViewController.swift */; };
+		ACEF996626D4C0DB00512000 /* MealsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEF996526D4C0DB00512000 /* MealsCollectionViewCell.swift */; };
 		ACF2140926CBA85B00197BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2140826CBA85B00197BF6 /* AppDelegate.swift */; };
 		ACF2140B26CBA85B00197BF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2140A26CBA85B00197BF6 /* SceneDelegate.swift */; };
 		ACF2140D26CBA85B00197BF6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2140C26CBA85B00197BF6 /* HomeViewController.swift */; };
@@ -53,8 +58,12 @@
 		8F6D19D063AC200C7E7676B1 /* Pods-ChatAppExercise-ChatAppExerciseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppExercise-ChatAppExerciseUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChatAppExercise-ChatAppExerciseUITests/Pods-ChatAppExercise-ChatAppExerciseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC8D02EA26CC8B7800C86623 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		AC8D02EC26CCABFF00C86623 /* AppUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUI.swift; sourceTree = "<group>"; };
-		ACEF995026D4892B00512000 /* FoodMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMealViewController.swift; sourceTree = "<group>"; };
 		ACEF995226D48A9F00512000 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACEF995826D4A51E00512000 /* MealModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModels.swift; sourceTree = "<group>"; };
+		ACEF995E26D4BE3600512000 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		ACEF996026D4BE8800512000 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		ACEF996326D4C09100512000 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		ACEF996526D4C0DB00512000 /* MealsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsCollectionViewCell.swift; sourceTree = "<group>"; };
 		ACF2140526CBA85B00197BF6 /* ChatAppExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatAppExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF2140826CBA85B00197BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF2140A26CBA85B00197BF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEF995C26D4BDD200512000 /* Kingfisher in Frameworks */,
 				48FDE36BD0E60AB4EF577ED9 /* Pods_ChatAppExercise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,11 +140,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ACEF995D26D4BDE200512000 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF995826D4A51E00512000 /* MealModels.swift */,
+				ACEF995E26D4BE3600512000 /* Networking.swift */,
+				ACEF996026D4BE8800512000 /* Protocol.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ACEF996226D4C06800512000 /* Meals */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF996326D4C09100512000 /* MealsViewController.swift */,
+				ACEF996526D4C0DB00512000 /* MealsCollectionViewCell.swift */,
+			);
+			path = Meals;
+			sourceTree = "<group>";
+		};
 		ACF213FC26CBA85B00197BF6 = {
 			isa = PBXGroup;
 			children = (
-				ACF2143D26CBA9B400197BF6 /* View Controllers */,
 				ACF2140726CBA85B00197BF6 /* ChatAppExercise */,
+				ACEF995D26D4BDE200512000 /* Networking */,
+				ACF2143D26CBA9B400197BF6 /* View Controllers */,
 				ACF2142126CBA86000197BF6 /* ChatAppExerciseTests */,
 				ACF2142C26CBA86000197BF6 /* ChatAppExerciseUITests */,
 				ACF2140626CBA85B00197BF6 /* Products */,
@@ -192,10 +222,10 @@
 			isa = PBXGroup;
 			children = (
 				ACF2143E26CBAA6D00197BF6 /* RegisterViewController.swift */,
-				ACF2144026CBAA8000197BF6 /* LoginViewController.swift */,
 				ACF2140C26CBA85B00197BF6 /* HomeViewController.swift */,
+				ACF2144026CBAA8000197BF6 /* LoginViewController.swift */,
 				AC8D02EA26CC8B7800C86623 /* WelcomeViewController.swift */,
-				ACEF995026D4892B00512000 /* FoodMealViewController.swift */,
+				ACEF996226D4C06800512000 /* Meals */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -218,6 +248,9 @@
 			dependencies = (
 			);
 			name = ChatAppExercise;
+			packageProductDependencies = (
+				ACEF995B26D4BDD200512000 /* Kingfisher */,
+			);
 			productName = ChatAppExercise;
 			productReference = ACF2140526CBA85B00197BF6 /* ChatAppExercise.app */;
 			productType = "com.apple.product-type.application";
@@ -292,6 +325,9 @@
 				Base,
 			);
 			mainGroup = ACF213FC26CBA85B00197BF6;
+			packageReferences = (
+				ACEF995A26D4BDD200512000 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = ACF2140626CBA85B00197BF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -440,15 +476,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF2144126CBAA8000197BF6 /* LoginViewController.swift in Sources */,
+				ACEF995F26D4BE3600512000 /* Networking.swift in Sources */,
+				ACEF996426D4C09100512000 /* MealsViewController.swift in Sources */,
 				ACF2140D26CBA85B00197BF6 /* HomeViewController.swift in Sources */,
+				ACEF995926D4A51E00512000 /* MealModels.swift in Sources */,
 				ACF2143F26CBAA6D00197BF6 /* RegisterViewController.swift in Sources */,
-				ACEF995126D4892B00512000 /* FoodMealViewController.swift in Sources */,
 				ACF2141326CBA85B00197BF6 /* ChatAppExercise.xcdatamodeld in Sources */,
 				AC8D02ED26CCABFF00C86623 /* AppUI.swift in Sources */,
 				ACF2144326CBB5F100197BF6 /* Constants.swift in Sources */,
 				ACF2140926CBA85B00197BF6 /* AppDelegate.swift in Sources */,
 				AC8D02EB26CC8B7800C86623 /* WelcomeViewController.swift in Sources */,
 				ACF2140B26CBA85B00197BF6 /* SceneDelegate.swift in Sources */,
+				ACEF996126D4BE8800512000 /* Protocol.swift in Sources */,
+				ACEF996626D4C0DB00512000 /* MealsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +821,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACEF995A26D4BDD200512000 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACEF995B26D4BDD200512000 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACEF995A26D4BDD200512000 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		ACF2141126CBA85B00197BF6 /* ChatAppExercise.xcdatamodeld */ = {
