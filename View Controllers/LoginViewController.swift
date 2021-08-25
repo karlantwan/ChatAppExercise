@@ -50,15 +50,15 @@ class LoginViewController: UIViewController {
             self.errorLabel.textColor = UIColor.systemGreen
             self.errorLabel.text = "You are logged in"
             
-            self.transitionToMeals()
+            self.transitionToHomeTabBar()
         }
         }
     }
 
-    func transitionToMeals() {
-        let mealsViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.mealsViewController) as? MealsViewController
+    func transitionToHomeTabBar() {
+        let homeTabBarViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeTabBarViewController) as? HomeTabBarViewController
 
-        self.view.window?.rootViewController = mealsViewController
+        self.view.window?.rootViewController = homeTabBarViewController
         self.view.window?.makeKeyAndVisible()
     }
 

@@ -54,7 +54,8 @@ class RegisterViewController: UIViewController {
         }
         
         if passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) !=  confirmPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) {
-        return "Password do not match"
+            
+        showError(_message: "Password do not match") 
                 }
      
         return nil

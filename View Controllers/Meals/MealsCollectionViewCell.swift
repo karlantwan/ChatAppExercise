@@ -11,11 +11,12 @@ class MealsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var categoryLabel: UILabel!
     
-    static let identifier = "MealCollectionViewCell"
+//
+//    static let identifier = "MealCollectionViewCell"
 
-    var category: MealCategories! {
+    var list: [MealCategory]! {
         didSet{
-            self.categoryLabel.text = categories.srtCategory ?? "no Category"
+            self.categoryLabel.text = list
             }
         }
     }

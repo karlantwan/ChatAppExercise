@@ -9,11 +9,11 @@ import Foundation
 
 //www.themealdb.com/api/json/v1/1/categories.php
 
-struct UnsplashAPIEndpoints {
+struct APIEndpoints {
     static let categories = "categories"
 }
 
-let baseURL = "www.themealdb.com/api/json/v1/1/categories.php"
+let baseURL = "https://www.themealdb.com/api/json/v1/1/"
 
 enum ParserError: Error {
     case failed(String)
@@ -30,7 +30,7 @@ class Networking {
     func fetch(resource: String, orderBy: String, completionHandler: @escaping (Data?, URLResponse?, String?) -> Void) {
         
         let session = URLSession(configuration: .default)
-        let url = URL(string: "\(baseURL)")
+        let url = URL(string: "\(baseURL)categories.php")
         print(url!)
         guard let url = url else {
             return
@@ -43,31 +43,34 @@ class Networking {
     }
 }
 
-    struct JSONParser {
+struct JSONParser {
         // Input Data
         // Expected output -> either and error or valid model
         
-        func parse<Model: Codable>(data: Data, completionHandler: @escaping ([Model]?, Error?) -> Void) {
-            do {
-                let jsonDecoder = JSONDecoder()
-                
-                let models = try jsonDecoder.decode([Model].self, from: data)
-                
-                DispatchQueue.main.async {
-                    completionHandler(models, nil)
-                }
-            } catch {
-                completionHandler(nil, ParserError.failed(error.localizedDescription))
+    func parse<Model: Codable>(data: Data, completionHandler: @escaping(Model?, Error?) -> Void) {
+        do {
+            let jsonDecoder = JSONDecoder()
+            print(data)
+            let models = try jsonDecoder.decode(Model.self, from: data)
+//            let models = try jsonDecoder.decode(Model.self, from: data)
+            
+            DispatchQueue.main.async {
+                completionHandler(models as Model, nil)
             }
+        } catch {
+            completionHandler(nil, ParserError.failed(error.localizedDescription))
+            print(String(describing: error))
         }
     }
+}
 
-class CategorySourceAPI {
-    let networking = Networking()
+
+class MealSourceAPI {
+    let network = Networking()
     
-    func fetchMealCategories(orderBy: String, resultBlock: @escaping ([MealCategories]?, APIError?) -> Void) {
-        networking.fetch(resource: UnsplashAPIEndpoints.categories, orderBy: orderBy) { data, _, errorMessage in
-        
+    func fetchMealCategories(orderBy: String, resultBlock: @escaping (MealCategory?, APIError?) -> Void) {
+        network.fetch(resource: APIEndpoints.categories, orderBy: orderBy) { data, _, errorMessage in
+            
             if let error = errorMessage {
                 resultBlock(nil, APIError.apiFailed(error))
                 return
@@ -79,18 +82,18 @@ class CategorySourceAPI {
             }
             
             let parser = JSONParser()
-
-            parser.parse(data: data) { (categories: [MealCategories]?, error: Error?) in
+            
+            parser.parse(data: data) { (meals: MealCategory?, error: Error?) in
                 
                 if error != nil {
                     resultBlock(nil, APIError.parsingFailed(error?.localizedDescription ?? "Parsing failed"))
                 }
                 
-                guard let categories = categories else {
+                guard let meals = meals else {
                     resultBlock(nil, APIError.parsingFailed("Entity is empty"))
                     return
                 }
-                resultBlock(categories, nil)
+                resultBlock(meals, nil)
             }
         }
     }
