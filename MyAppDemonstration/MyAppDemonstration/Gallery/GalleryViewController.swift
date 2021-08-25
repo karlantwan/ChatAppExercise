@@ -60,6 +60,7 @@ class GalleryViewController: UIViewController {
                     case .parsingFailed(let message):
                         print(message)
                     }
+                    
                 } else {
                     if let photos = photos {
                         self.photos = photos
